@@ -43,7 +43,7 @@ php artisan vendor:publish --provider="NotificationChannels\HismsWs\HismsWsServi
 ### Set up hisms.ws account
 You must have an account with [HismsWs](https://www.hisms.ws)  to be able to use this package.
 
-> This package has no affiliation with hisms.ws whatsoever. 
+
 
 #### Credentials.
 There are two methods of authentication when using hisms.ws api. 
@@ -89,10 +89,6 @@ php artisan make:notification UserRegistered
 ``` 
 and configure the notification class to use HismsWsChannel.
 
-Or you could use our custom artisan command:
-```bash
-php artisan HismsWs:notification UserRegistered
-```
 
 The `toHismsWs` method should return a string of the text message to be sent or an instance of `HismsWsMessage`.
 
@@ -103,7 +99,7 @@ namespace App\Notifications;
 
 use Illuminate\Notifications\Notification;
 use NotificationChannels\HismsWs\HismsWsChannel;
-use NotificationChannels\HismsWs\HismsWsMessage;
+use NotificationChannels\HismsWs\HismsWsSmsMessage;
 
 class UserRegistered extends Notification
 {
@@ -122,9 +118,9 @@ class UserRegistered extends Notification
      * Get the text message representation of the notification
      *
      * @param  mixed      $notifiable
-     * @param \NotificationChannels\HismsWs\HismsWsMessage $msg
+     * @param \NotificationChannels\HismsWs\HismsWsSmsMessage $msg
      *
-     * @return \NotificationChannels\HismsWs\HismsWsMessage|string
+     * @return \NotificationChannels\HismsWs\HismsWsSmsMessage|string
      */
     public function toHismsWs($notifiable, HismsWsSmsMessage $msg)
     {
@@ -200,9 +196,6 @@ The `time` method accepts either a DateTime object or a timestamp.
 $ composer test
 ```
 
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## License
 
