@@ -28,7 +28,7 @@ This package was inspired from :
 
 Install the package using composer:
 ```bash
-composer require ab/hisms-notification-channel
+composer require ab-alselwi/hisms-ws-notification-channel
 ```
 Add service provider to your array of providers in `config/app.php` 
 > You don't need to do this step for laravel 8.0+
@@ -96,7 +96,6 @@ php artisan HismsWs:notification UserRegistered
 
 The `toHismsWs` method should return a string of the text message to be sent or an instance of `HismsWsMessage`.
 
-See [Available Message methods](#available-message-methods) for more details.
 ```php
 <?php
 

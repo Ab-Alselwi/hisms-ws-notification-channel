@@ -1,5 +1,5 @@
 {
-    "name": "Ab-Alselwi/hisms-ws-notification-channel",
+    "name": "ab-alselwi/hisms-ws-notification-channel",
     "description": "Hisms.ws Notification Channel for laravel.",
     "keywords": ["laravel", "notifications", "mobaily sms","Hisms"],
     "homepage": "https://github.com/alhoqbani/laravel-mobily-ws-notification",
@@ -37,7 +37,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "0.x-dev"
+            "dev-main": "0.x-dev"
         },
         "laravel": {
             "providers": [
