@@ -3,7 +3,7 @@
 
 This package makes it easy to send notifications using [HismsWs](https://www.hisms.ws) with Laravel 8.x.
 
-This package was inspired from :
+This package was inspired by :
 - [twilio](https://github.com/laravel-notification-channels/twilio)
 - [laravel-mobily-ws-notification](https://github.com/alhoqbani/laravel-mobily-ws-notification)
 
